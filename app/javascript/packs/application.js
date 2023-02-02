@@ -17,4 +17,8 @@ Turbolinks.start()
 ActiveStorage.start()
 
 
+import $ from 'jquery';
+global.$ = jQuery;
+import "bootstrap";
+
 import "css/application";

@@ -16,8 +16,11 @@ Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
 
-import "css/admin"
+
+import $ from 'jquery';
+global.$ = jQuery;
 import "bootstrap";
+import "css/admin"
 
 import "./plugins/jquery.min.js"
 import "./plugins/bootstrap.bundle.min.js"
