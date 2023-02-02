@@ -1,12 +1,11 @@
 <p id="notice"><%= notice %></p>
 
 
-
 <div class="jumbotron shadow">
   <h1 class="display-3"><%= @student.first_name %> <%= @student.last_name %></h1>
-  <p class="lead"><%= @student.address %></p>
+  <p class="lead"><%= @student.permanent_address %> | <%= @student.local_address %></p>
   <hr class="my-4">
-  <p><%= @student.phone_number %> | <%= @student.email %></p>
+  <p><%= @student.permanent_contact_number %> | <%= @student.alternate_contact_number %> | <%= @student.email %></p>
   <div class="d-flex flex-row">
     <%= link_to 'Edit', edit_student_path(@student), class:"btn btn-primary " %>
     <%= link_to 'Back', students_path, class:"btn btn-dark ml-3"%>
