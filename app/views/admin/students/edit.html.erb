@@ -1,11 +1,13 @@
 <div class="card border-1 shadow">
-    <div class="card-header">
-        <h1>Editing Student</h1>
+    <div class="card-header d-flex">
+
+        <h1 class="mr-auto mb-0">Editing Student</h1>
+               <%= link_to 'Show', admin_student_path(@student), class:"btn btn-secondary p-2 mb-2 mt-2" %> <%= link_to 'Back', admin_students_path, class:"btn btn-dark ml-2 p-2 mb-2 mt-2" %>
     </div>
     <div class="card-body">
         <%= render 'form', student: @student %>
     </div>
     <div class="card-footer">
-        <%= link_to 'Show', admin_student_path(@student), class:"btn btn-secondary" %> <%= link_to 'Back', admin_students_path, class:"btn btn-dark" %>
+        <td><%= link_to 'Destroy', admin_student_path(@student), method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %></td>
     </div>
 </div>
