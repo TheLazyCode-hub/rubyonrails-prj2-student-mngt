@@ -19,6 +19,8 @@ ActiveStorage.start()
 
 import $ from 'jquery';
 global.$ = jQuery;
+
+import "@fortawesome/fontawesome-free/css/all"
 import "bootstrap";
 import "css/admin"
 
