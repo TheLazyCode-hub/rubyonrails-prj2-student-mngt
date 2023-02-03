@@ -1,0 +1,10 @@
+<div class="card border-1 shadow">
+    <div class="card-header d-flex">
+        <h1 class="mr-auto mb-0">New Blog</h1>
+        <%= link_to 'Back', admin_blogs_path, class:"btn btn-secondary p-2 mb-2 mt-2" %>
+    </div>
+    <div class="card-body">
+        <%= render 'form', blog: @blog %>
+    </div>
+
+</div>

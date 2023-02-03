@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+
+<div class="jumbotron shadow">
+ <h1 class="display-3"> <%= @blog.title %></h1>
+  <p class="lead">Blog</p>
+  <hr class="my-4">
+  <p> <%= @blog.content %></p>
+  <div class="d-flex flex-row">
+    <%= link_to 'Edit', edit_admin_blog_path(@blog), class:"btn btn-primary " %>
+    <%= link_to 'Back', admin_blogs_path, class:"btn btn-dark ml-3"%>
+  </div>
+</div>
