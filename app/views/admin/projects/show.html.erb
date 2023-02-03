@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+
+
+<div class="jumbotron shadow">
+ <h1 class="display-3"><%= @project.name %></h1>
+  <p class="lead">project</p>
+  <hr class="my-4">
+  <p><%= @project.description %></p>
+  <div class="d-flex flex-row">
+    <%= link_to 'Edit', edit_admin_project_path(@project), class:"btn btn-primary " %>
+    <%= link_to 'Back', admin_projects_path, class:"btn btn-dark ml-3"%>
+  </div>
+</div>
